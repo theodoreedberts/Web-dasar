@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLAYMUSIC - 2572002</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins';
+            color: #ffffff;
+        }
+        .layout {
+            width: 100%;
+            height: 100vh;
+            border-collapse: collapse;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #000000;
+            vertical-align: top;
+            padding: 24px;
+        }
+        .logo {
+            color: #1DB954;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+        .navigasi {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+        .navigasi li {
+            margin-bottom: 15px;
+        }
+        .navigasi a {
+            text-decoration: none;
+            color: #b3b3b3;
+            font-size: 14px;
+        }
+        .navigasi a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .playlist-header {
+            font-size: 12px;
+            color: #b3b3b3;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+        .footer-id {
+            color: #535353;
+            font-size: 12px;
+            position: absolute;
+            bottom: 20px;
+        }
+        .main {
+            background-color: #121212;
+            vertical-align: top;
+            padding: 32px;
+        }
+        .now-playing {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .album-art {
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .song-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .album-desc {
+            color: #b3b3b3;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+        .controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .btn-ctrl, .btn-play {
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+        }
+        .btn-play {
+            background-color: #1DB954;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .btn-ctrl:hover {
+            color: #1DB954;
+        }
+        .btn-play:hover {
+            background-color: white;
+        }
+        .playlist-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .playlist-table th {
+            text-align: left;
+            color: #b3b3b3;
+            border-bottom: 1px solid #282828;
+            padding: 10px;
+            font-size: 12px;
+        }
+        .playlist-table td {
+            padding: 12px 10px;
+            font-size: 14px;
+            color: #b3b3b3;
+        }
+        .playlist-table tr:hover {
+            background-color: #282828;
+        }
+        .playlist-table tr:hover td {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table class="layout" border="1">
+        <tr>
+            <td class="sidebar">
+                <div class="logo">StreamBoat</div>
+                <ul class="navigasi">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Search</a></li>
+                    <li><a href="">Your Library</a></li>
+                    <li><a href="">Liked Songs</a></li>
+                </ul>
+                <p class="playlist-header">YOUR PLAYLIST</p>
+                <ul class="navigasi">
+                    <li><a href="">Chill Vibes</a></li>
+                    <li><a href="">Late Night Drive</a></li>
+                    <li><a href="">Morning Boost</a></li>
+                    <li><a href="">Study Mode</a></li>
+                    <li><a href="">Throwbacks</a></li>
+                </ul>
+                <div class="footer-id">2572002 - Theodore Edbert Suryo</div>
+            </td>
+            <td class="main">
+                <div class="now-playing">
+                    <img src="logo.jpg" class="album-art">
+                    <h1 class="song-title">FOCUS</h1>
+                    <p class="album-desc">The 1st Mini Album</p>
+                    <div class="controls">
+                        <a href="#" class="btn-ctrl">&#x23EE;</a>
+                        <a href="#" class="btn-play">&#9654; Play</a>
+                        <a href="#" class="btn-ctrl">&#x23ED;</a>
+                    </div>
+                </div>
+
+                <table class="playlist-table">
+                        <tr>
+                            <th>#</th>
+                            <th>TITLE</th>
+                            <th>ARTIST</th>
+                            <th>ALBUM</th>
+                            <th>DURATION</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>FOCUS</td>
+                            <td>Hearts2Hearts</td>
+                            <td>FOCUS</td>
+                            <td>2:57</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Apple Pie</td>
+                            <td>Hearts2Hearts</td>
+                            <td>FOCUS</td>
+                            <td>3:06</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Pretty Please</td>
+                            <td>Hearts2Hearts</td>
+                            <td>FOCUS</td>
+                            <td>3:24</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Flutter</td>
+                            <td>Hearts2Hearts</td>
+                            <td>FOCUS</td>
+                            <td>2:05</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Blue Moon</td>
+                            <td>Hearts2Hearts</td>
+                            <td>FOCUS</td>
+                            <td>2:57</td>
+                        </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
