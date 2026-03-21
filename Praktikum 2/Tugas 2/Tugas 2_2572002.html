@@ -1,0 +1,48 @@
+<!-- 2572002 - Theodore Edbert Suryo -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran - 2572002</title>
+</head>
+<body bgcolor="lightyellow" align="center">
+    <h1>Pendaftaran Himpunan Mahasiswa Teknologi</h1>
+    <fieldset align="left">
+        <legend>Data Diri Calon Anggota</legend>
+        <br>
+        <form action="action.php">
+            Nama Lengkap <br>
+            <input type="text" name="nama" id="nama" size="40"><br><br>
+            Kata Sandi Rahasia <br>
+            <input type="password" name="password" id="password" size="40"><br><br>
+            Divisi Pilihan <br>
+            <select name="divisi" id="divisi">
+                <option value="acara">Divisi Acara</option>
+                <option value="humas">Divisi Humas</option>
+                <option value="multimedia">Divisi Multimedia</option>
+                <option value="ketua">Ketua Himpunan (lol)</option>
+            </select><br><br>
+            Jenis Kelamin <br>
+            <input type="radio" name="option" value="pria">Pria
+            <input type="radio" name="option" value="wanita">Wanita
+            <br><br>
+            Hari Luang (Bisa lebih dari 1) <br>
+            <input type="checkbox" name="checkbox" value="senin">Senin
+            <input type="checkbox" name="checkbox" value="rab">Rabu
+            <input type="checkbox" name="checkbox" value="jumat">Jumat
+            <br><br>
+            Motivasi Bergabung <br>
+            <textarea name="motivasi" id="textarea"></textarea>
+            <br><br>
+            <hr>
+            <div align="right">
+                <input type="reset" name="reset" id="reset" value="Kosongkan Data">
+                <input type="submit" name="submit" id="submit" value="Kirim Pendaftaran">
+            </div>
+        </form>
+    </fieldset>
+    <br>
+    &copy; [2572002] [Theodore Edbert Suryo]. All rights reserved.
+</body>
+</html>
