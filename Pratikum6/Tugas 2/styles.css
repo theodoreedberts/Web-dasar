@@ -8,11 +8,8 @@
 .app{
     display: grid;
     min-height: 100vh;
-    /* Bikin 2 kolom: Sidebar 150px, sisanya buat Main */
     grid-template-columns: 150px 1fr; 
-    /* Bikin 2 baris: Header 70px, sisanya buat bawahnya */
     grid-template-rows: 70px 1fr; 
-    /* Petakan areanya sesuai nama grid-area di bawah */
     grid-template-areas: 
         "header header"
         "sidebar main"
