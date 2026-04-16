@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexaCore - [2572002]</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav class="bg-dark navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand text-light fw-bold" href="#">NexaCore</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-secondary" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-secondary" id="liveToastBtn" onclick="showToast()">Hubungi Kami</button>
+                        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header">
+                                <p class="">📩</p>
+                                <strong class="me-auto">Pesan Terkirim</strong>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                            </div>
+                            <div class="toast-body">
+                            Terima kasih! Tim NexaCore akan menghubungi Anda dalam <strong>1x24 jam</strong>
+                            </div>
+                        </div>
+                        </div>
+                    </li>    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <div id="carousel">
+            <div class="container-fluid px-0">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="pict1.jpg" class="d-block w-100" >
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2 class="fw-bold">Membangun Masa Depan Digital</h2>
+                                    <p>Solusi terpecaya untuk bisnis Anda.</p>
+                                    <button type="button" class="btn btn-light">Lihat Layanan</button>
+                                </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="pict2.jpg" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2 class="fw-bold">Talenta Professional Berpengalaman</h2>
+                                    <p>Lebih dari 200 talenta siap mendampingi Anda.</p>
+                                </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="pict3.jpg" class="d-block w-100" >
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2 class="fw-bold">Teknologi Untuk Pertumbuhan</h2>
+                                    <p>Dari AI hinggal cloud -- semua dalam satu atap.</p>
+                                    <button type="button" class="btn btn-light">Konsultasi Gratis</button>
+                                </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="daftar">
+            <div class="container-fluid px-0 text-center bg-dark text-light">
+                <div class="row g-0 py-3">
+                    <div class="col">
+                        <h3 class="fw-bold">15+</h3>
+                        <p>TAHUN PENGALAMAN</p>
+                    </div>
+                    <div class="col">
+                        <h3 class="fw-bold">500+</h3>
+                        <p>PROYEK SELESAI</p>
+                    </div>
+                    <div class="col">
+                        <h3 class="fw-bold">120+</h3>
+                        <p>KLIEN AKTIF</p>
+                    </div>
+                    <div class="col">
+                        <h3 class="fw-bold">98%</h3>
+                        <p>KEPUASAN KLIEN</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="layanan">
+            <div class="container px-0">
+                <h3 class="text-center fw-bold pt-3">Layanan Kami</h3>
+                <p class="text-center">Rangkaian layanan teknologi untuk mendorong pertumbuhan bisnis anda.</p>
+                <div class="row row-cols-1 row-cols-md-3 g-4 ">
+                <div class="col">
+                    <div class="card h-100">
+                        <h1 class="fw-bold p-3"><i class="bi bi-code-slash ms-3"></i></h1>
+                        <div class="card-body">
+                            <h5 class="card-title">Software Development</h5>
+                            <p class="card-text mb-3">Pengembangan aplikasi web & mobile dari hulu ke hilir sesuai kebutuhan bisnis Anda.</p>
+                            <span class="badge bg-secondary cursor-pointer" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" 
+                                data-bs-title="Teknologi" 
+                                data-bs-content="React Vue, Flutter, Node.js, Laravel, Python">
+                                Info Teknologi
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <h1 class="fw-bold p-3"><i class="bi bi-cloud-arrow-up ms-3"></i></h1>
+                        <div class="card-body">
+                            <h5 class="card-title">Cloud Infrastrucutre</h5>
+                            <p class="card-text">Arsitektur cloud yang scalable dan aman untuk operasional bisnis Anda.</p>
+                            <span class="badge bg-secondary cursor-pointer" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" 
+                                data-bs-title="Platform" 
+                                data-bs-content="AWS, Google Cloud, Microsoft Azure, dan layanan hybrid cloud.">
+                                Info Platform
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                    <h1 class="fw-bold p-3"><i class="bi bi-cpu ms-3"></i></h1>
+                    <div class="card-body">
+                        <h5 class="card-title">AI & Data Analytics</h5>
+                        <p class="card-text">Ubah data mentah menjadi insight bisnis yang actionable dengan solusi AI kami.</p>
+                        <span class="badge bg-secondary cursor-pointer" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" 
+                                data-bs-title="Solusi AI" 
+                                data-bs-content="Machine learning, NLP, Computer vision, dan Business intelligence dashboard.">
+                                Info Solusi
+                        </span>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <h1 class="fw-bold p-3"><i class="bi bi-shield-check ms-3"></i></h1>
+                        <div class="card-body">
+                            <h5 class="card-title">Cybersecurity</h5>
+                            <p class="card-text">Perlindungan aset digital dengan sistem keamanan berlapis standar internasional</p>
+                            <span class="badge bg-secondary cursor-pointer" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" 
+                                data-bs-title="Layanan Keamanan" 
+                                data-bs-content="Penetration testing, audit keamanan, SOC monitoring, dan ISO 27001 compliance">
+                                Info Layanan
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <h1 class="fw-bold p-3"><i class="bi bi-palette ms-3"></i></h1>
+                        <div class="card-body">
+                            <h5 class="card-title">UI & UX Design</h5>
+                            <p class="card-text">Perlindungan aset digital dengan sistem keamanan berlapis standar internasional</p>
+                            <span class="badge bg-secondary cursor-pointer" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" 
+                                data-bs-title="Proses Design" 
+                                data-bs-content="Research, wireframing, prototyping, usability testing, dan design system.">
+                                proses Design
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <h1 class="fw-bold p-3"><i class="bi bi-graph-up-arrow ms-3"></i></h1>
+                        <div class="card-body">
+                            <h5 class="card-title">IT Consulting</h5>
+                            <p class="card-text">Perlindungan aset digital dengan sistem keamanan berlapis standar internasional</p>
+                            <span class="badge bg-secondary cursor-pointer" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" 
+                                data-bs-title="Cakupan Konsultasi" 
+                                data-bs-content="Digital transformation, IT strategy, vendor assessment, dan charge management">
+                                Info Cakupan
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pertanyaan">
+            <div class="container px-0 ">
+                <h3 class="fw-bold text-center py-5">Pertanyaan Umum</h3>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
+                                Berapa lama waktu pengerjaan proyek rata-rata?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Bergantung skala proyek. Proyek kecil dapat selesai dalam 2–4 minggu, sedangkan proyek
+                                enterprise biasanya membutuhkan 3–9 bulan. Kami selalu memberikan timeline yang
+                                transparan di awal engagement.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Apakah tersedia layanan maintenance pasca-launch?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Ya. Kami menyediakan paket maintenance dan support komprehensif mulai dari bug fixing,
+                                pembaruan keamanan, hingga penambahan fitur. Tim siap 24/7 untuk klien paket Enterprise.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Teknologi apa saja yang digunakan?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            Kami menguasai React, Vue, Next.js (frontend), Node.js, Python, Laravel (backend),
+                            AWS/GCP/Azure (cloud), serta TensorFlow dan PyTorch untuk kebutuhan AI/ML.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Bagaimana model kerja sama dan pembayarannya?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Tersedia tiga model: Fixed Price untuk scope yang jelas, Time & Material untuk proyek yang
+                                dinamis, dan Dedicated Team untuk kebutuhan jangka panjang. Pembayaran dilakukan bertahap
+                                sesuilih milestone.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Apakah melayani klien dari luar Indonesia?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Ya. Kami memiliki klien aktif di Singapura, Malaysia, Australia, dan Eropa. Tim kami terbiasa
+                                bekerja lintas zona waktu dengan Bahasa Inggris sebagai bahasa komunikasi profesional.      
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <footer class="bg-dark text-secondary py-4 pt-6">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-5 mb-4">
+                <h5 class="text-white fw-bold">NexaCore</h5>
+                <p class="small mb-0">
+                Teknologi untuk pertumbuhan. Partner digital terpercaya sejak 2009.
+                </p>
+            </div>
+
+            <div class="col-md-2 mb-4">
+                <h6 class="text-white text-uppercase" style="font-size: 0.85rem;">Layanan</h6>
+                <ul class="nav flex-column small">
+                    <li class="nav-item mb-1"><a href="#" class="text-secondary text-decoration-none">Software Dev</a></li>
+                    <li class="nav-item mb-1"><a href="#" class="text-secondary text-decoration-none">Cloud</a></li>
+                    <li class="nav-item mb-1"><a href="#" class="text-secondary text-decoration-none">AI & Data</a></li>
+                    <li class="nav-item mb-1"><a href="#" class="text-secondary text-decoration-none">Cybersecurity</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-2 mb-4">
+                <h6 class="text-white text-uppercase" style="font-size: 0.85rem;">Perusahaan</h6>
+                <ul class="nav flex-column small">
+                    <li class="nav-item mb-1"><a href="#" class="text-secondary text-decoration-none">Karir</a></li>
+                    <li class="nav-item mb-1"><a href="#" class="text-secondary text-decoration-none">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <h6 class="text-white text-uppercase" style="font-size: 0.85rem;">Ikuti Kami</h6>
+                <div class="d-flex gap-3 fs-5">
+                    <a href="#" class="text-secondary"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="text-secondary"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="text-secondary"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-secondary"><i class="bi bi-github"></i></a>
+                </div>
+            </div>
+            </div> <hr class="border-secondary opacity-25">
+            <div class="text-center mt-3">
+                <small>[2572002] - Theodore Edbert Suryo</small>
+            </div>
+
+        </div> 
+
+    </footer>
+    </main> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.querySelectorAll('[data-bs-toggle="popover"]').forEach(el => {
+        new bootstrap.Popover(el);
+    });
+    function showToast() {
+        bootstrap.Toast.getOrCreateInstance(document.getElementById('liveToast')).show();
+    }
+</script>
+
+</body>
+
+</html>
+
