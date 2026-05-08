@@ -1,0 +1,62 @@
+<!--2572002 - Theodore Edbert Suryo -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI - 2572002</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator BMI</h1>
+
+        
+        <div class="jenis-kelamin">
+            <p>Jenis Kelamin :</p>
+            <select name=select1>
+                <option value=option1 id="laki-laki">Laki-Laki</option>
+                <option value=option2 id="perempuan">Perempuan</option>
+            </select>
+        </div>
+
+        <div class="umur">
+            <p>Umur (tahun): </p>
+            <input type=number id="umur" name="text1" value="text1" maxlength="20">
+        </div>
+
+        <div class="tinggi">
+            <p>Tinggi badan (cm): </p>
+            <input type=number id="tinggi" name="text1" value="text1" maxlength="20">
+        </div>
+
+        <div class="berat">
+            <p>Berat badan (kg): </p>
+            <input type=number id="berat" name="text1" value="text1" maxlength="20">
+        </div>
+
+        <div class="hitung">
+            <button onclick="hitung('bmi')">Hitung BMI</button>
+            <button onclick="hitung('reset')">Reset</button>
+        </div>
+
+        <div id="hasil-bmi">
+
+        </div>
+
+        <div class="kategori">
+            <h3>Kategori BMI</h3>
+            <ul>
+                <li>Kekurangan Berat Badan: <18.5</li>
+                <li>Normal: 18.5 - 24.9</li>
+                <li>Kelebihan Berat Badan : 25.0 - 29.9</li>
+                <li>Obesitas: >= 30.0</li>
+            </ul>
+        </div>
+        
+    </div>
+
+    
+</body>
+</html>
