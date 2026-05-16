@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konverter-2572002</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <h1>Konverter Mata Uang</h1>
+
+    <div class="input-box">
+        <label for="number">Jumlah Uang</label><br>
+        <input type="number" id="jumlah" placeholder="Contoh: 100">
+        <span class="error" id="error-jumlah"></span>
+    </div>
+
+    <div class="input-box">
+        <label for="select">Dari Mata Uang</label><br>
+        <select name="dari" id="dari"></select>
+    </div>
+
+    <button id="btn-swap" onclick="tukarMataUang()">Tukar</button>
+
+    <div class="input-box">
+        <label for="ke">Ke Mata Uang</label><br>
+        <select name="ke" id="ke"></select>
+    </div>
+
+    <button id="konversi" onclick="konversi()">Konversi</button>
+
+    <div id="result"></div>
+
+    <p id="rate-note"></p>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
