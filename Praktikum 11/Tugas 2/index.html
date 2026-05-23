@@ -1,0 +1,72 @@
+<!--2572002 - Theodore Edbert Suryo-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - 2572002</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <h2>❓ FAQ Accordion</h2>
+
+   <div class="filter-container">
+        <button class="btnfilter" id="filter-semua">Semua</button>
+        <button class="btnfilter" id="filter-html">HTML</button>
+        <button class="btnfilter" id="filter-css">CSS</button>
+        <button class="btnfilter" id="filter-js">JavaScript</button>
+   </div>
+
+   <div class="faq-container">
+        <div class="faq-item" data-category="html">
+            <div class="faq-question">Apa itu tag semantic HTML?</div>
+            <div class="faq-answer">Tag semantic adalah elemen HTML yang memiliki makna jelas, seperti &lt;header&gt;, &lt;nav&gt;, &lt;article&gt;,
+                dan &lt;footer&gt;. Penggunaan tag semantic membantu mesin pencari dan pembaca layar memahami
+                truktur halaman.</div>
+        </div>
+
+        <div class="faq-item" data-category="html">
+            <div class="faq-question">Apa perbedaan &lt;div&gt; dan &lt;span&gt; </div>
+            <div class="faq-answer">&lt;div&gt; adalah elemen block yang memakan satu baris penuh, biasanya digunakan untuk
+                mengelompokkan section besar. &lt;span&gt; adalah elemen inline yang digunakan untuk menandai
+                sebagian kecil teks di dalam paragraf.</div>
+        </div>
+
+        <div class="faq-item" data-category="css">
+            <div class="faq-question">Apa itu CSS specificy </div>
+            <div class="faq-answer">Specificity adalah sistem yang digunakan browser untuk menentukan aturan CSS mana yang
+                diterapkan ketika ada konflik. Semakin spesifik selectornya (ID > class > tag), semakin tinggi
+                prioritasnya.</div>
+        </div>
+
+        <div class="faq-item" data-category="css">
+            <div class="faq-question">Apa perbedaan display flex dan grid? </div>
+            <div class="faq-answer">Flexbox dirancang untuk layout satu dimensi (baris atau kolom). CSS Grid dirancang untuk layout
+                dua dimensi (baris DAN kolom sekaligus). Keduanya bisa dipakai bersamaan.</div>
+        </div>
+
+        <div class="faq-item" data-category="js">
+            <div class="faq-question">Apa itu event bubbling?</div>
+            <div class="faq-answer">Event bubbling adalah perilaku di mana event yang terjadi pada elemen anak akan menyebar ke
+                elemen parentnya. Misalnya klik pada &lt;button&gt; di dalam &lt;div&gt; juga akan memicu event pada &lt;div&gt;
+                tersebut.</div>
+        </div>
+
+        <div class="faq-item" data-category="js">
+            <div class="faq-question">Apa perbedaan == dan === di JavaScript? </div>
+            <div class="faq-answer">== membandingkan nilai saja dan melakukan type coercion (konversi tipe otomatis), sehingga '5' ==
+                5 bernilai true. === membandingkan nilai DAN tipe data, sehingga '5' === 5 bernilai false.
+            </div>
+        </div>
+
+   </div>
+
+   <div class="footer">2572002 - THEODORE EDBERT SURYO</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
