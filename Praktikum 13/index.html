@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DaftarKontak - 2572002</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Daftar Kontak</h2>
+        
+        <div class="mode-label" id="modeText">Mode: Tambah</div>
+        
+        <form id="contactForm">
+            <div class="form-row">
+                <input type="text" id="nama" placeholder="Nama lengkap" required>
+                <input type="text" id="telepon" placeholder="No. telepon">
+                <input type="email" id="email" placeholder="Email">
+                <select id="kategori">
+                    <option value="Teman">Teman</option>
+                    <option value="Keluarga">Keluarga</option>
+                    <option value="Kerja">Kerja</option>
+                    <option value="Lainnya">Lainnya</option>
+                </select>
+            </div>
+            
+            <div class="action-buttons">
+                <button type="submit" class="btn btn-simpan">Simpan</button>
+                <button type="button" id="btnBatal" class="btn btn-batal hidden" onclick="batalEdit()">Batal</button>
+            </div>
+        </form>
+
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="searchInput" placeholder="Cari nama, telepon, atau email...">
+        </div>
+
+        <div class="counter" id="counterText">0 dari 0 kontak</div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Telepon</th>
+                    <th>Email</th>
+                    <th>Kategori</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                </tbody>
+        </table>
+
+        <div class="footer">2572002 - Theodore Edbert Suryo</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
